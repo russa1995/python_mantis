@@ -11,5 +11,10 @@
     "user": "root",
     "password": "",
     "db": "bugtracker"
+  },
+  "ftp": {
+    "host": "127.0.0.1",
+    "username": "mantis",
+    "password": "mantis"
   }
 }

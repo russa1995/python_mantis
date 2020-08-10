@@ -2,16 +2,12 @@
 Test suite for _osx_support: shared OS X support functions.
 """
 
-import os
-import platform
-import stat
-import sys
-import unittest
-
 from selenium import webdriver
 from fixture.session import SessionHelper
 from fixture.project import ProjectHelper
 from fixture.james import JamesHelper
+from fixture.mail import MailHelper
+from fixture.signup import SignupHelper
 
 
 class Application:
@@ -43,8 +39,6 @@ class Application:
     def open_home_page(self):
         wd = self.wd
         wd.get(self.base_url)
-
-
 
     def destroy(self):
         self.wd.quit()
